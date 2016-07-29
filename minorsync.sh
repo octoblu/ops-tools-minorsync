@@ -1,7 +1,5 @@
 #!/bin/bash
 
-SCRIPT_VERSION="v2.0.0"
-
 describe_aws_instance() {
   aws ec2 describe-instances \
     --filters "Name=tag:Name,Values=service-minor-cluster"
